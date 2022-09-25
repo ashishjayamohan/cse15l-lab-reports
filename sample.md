@@ -3,7 +3,7 @@
 **Bold Text**
 *Italics Text*
 [Link](google.com)
-![Image](/img.jpg)
+![Image](/files/screenshot.jpg)
 
 > Blockquote
 
