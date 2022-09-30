@@ -3,7 +3,7 @@
 ## 1. Installing VSCode
 VSCode can be installed via [this link](https://code.visualstudio.com/). VSCode is a text editor that has powerful features, such as realtime Markdown rendering. On the VSCode site, click the download button to download the compressed file (`.zip`).
 
-![Image][~/Screen Shot 2022-09-30 at 8.00.39 AM.png]
+![Image](~/Screen Shot 2022-09-30 at 8.00.39 AM.png)
 
 After it finishes downloading, open the `.zip` file to finish the download of VSCode. VSCode should now be fully operational. You should see a screen prompting you to set up VSCode as follows:
 
