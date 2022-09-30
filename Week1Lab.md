@@ -1,5 +1,13 @@
 # Remote Access
-****
+## Table of Contents
+1. [Installing VSCode](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#1-installing-vscode)
+2. [Remotely Connecting](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#2-remotely-connecting)
+3. [Trying Some Basic Commands](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#3-trying-some-basic-commands)
+4. [Moving Files with SCP](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#4-moving-files-with-scp)
+5. [Setting an SSH Key](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#5-setting-an-ssh-key)
+6. [Optimizing Remote Running](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#6-optimizing-remote-running)
+
+
 ## 1. Installing VSCode
 VSCode can be installed via [this link](https://code.visualstudio.com/). VSCode is a text editor that has powerful features, such as realtime Markdown rendering. On the VSCode site, click the download button to download the compressed file (`.zip`).
 
