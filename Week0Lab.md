@@ -3,7 +3,7 @@
 **Bold Text**
 *Italics Text*
 [Link](https://google.com)
-![Image](https://raw.githubusercontent.com/ashishjayamohan/cse15l-lab-reports/main/screenshot.JPG)
+![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Images/screenshot.JPG?raw=true)
 
 > Blockquote
 

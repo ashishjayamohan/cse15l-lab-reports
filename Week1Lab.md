@@ -11,17 +11,17 @@
 ## 1. Installing VSCode
 VSCode can be installed via [this link](https://code.visualstudio.com/). VSCode is a text editor that has powerful features, such as realtime Markdown rendering. On the VSCode site, click the download button to download the compressed file (`.zip`).
 
-![Image](https://raw.githubusercontent.com/ashishjayamohan/cse15l-lab-reports/main/Screen%20Shot%202022-09-30%20at%208.00.39%20AM.png)
+![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Images/Screen%20Shot%202022-09-30%20at%208.00.39%20AM.png?raw=true)
 
 After it finishes downloading, open the `.zip` file to finish the download of VSCode. VSCode should now be fully operational. You should see a screen prompting you to set up VSCode as follows:
 
-![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-09-30%20at%208.03.23%20AM.png?raw=true)
+![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Images/Screen%20Shot%202022-09-30%20at%208.03.23%20AM.png?raw=true)
 
 
 ## 2. Remotely Connecting
 In order to remotely connect to a computer, open the terminal on VSCode. Alternatively, you can use your computer's stock Terminal application. You will have to obtain your login credentials at the [following site](https://sdacs.ucsd.edu/~icc/index.php). After obtaining your login credentials, you will be able to log in with the following command: `ssh username@server`. `ssh` is a command that stands for Secure Shell. For the purposes of CSE15L, your command will look something like: `ssh cs15lfa22zz@ieng6.ucsd.edu` where `zz` is replaced by some other sequence of characters.
 
-![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-09-30%20at%208.22.58%20AM.png?raw=true)
+![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Images/Screen%20Shot%202022-09-30%20at%208.22.58%20AM.png?raw=true)
 
 After entering this command, you will be prompted to enter a password - this is the password you obtained earlier. Note that when you type in your password, no characters will be displayed (no asterisks marking how many characters you've typed either). After successfully entering your password, you will see the above screen. The remote login is successful and will now allow you to utilize the remote computer's resources.
 
@@ -41,7 +41,7 @@ Once you are connected to the remote computer, you can begin testing out some ba
 
 Below is an example of some basic commands run on the remote machine. *Note that your remote machine configuration may slightly differ from the one shown in this example.*
 
-![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-09-30%20at%208.32.55%20AM.png?raw=true)
+![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Images/Screen%20Shot%202022-09-30%20at%208.32.55%20AM.png?raw=true)
 
 
 ## 4. Moving Files With `scp`
@@ -49,7 +49,7 @@ Below is an example of some basic commands run on the remote machine. *Note that
 
 Let's say, for example, that we were to create a local file `WhereAmI.java` that we wanted to copy into our remote desktop. After creating the local file, we could use the following sequence to copy the file into our remote computer. (*Note that this function will also prompt you to enter a password. There will be no indication of you typing in a password.*) We could use the following function to copy `WhereAmI.java` to the CSE computers: `scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/` where `zz` is replaced by your own unique login character sequence.
 
-![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-09-30%20at%208.45.58%20AM.png?raw=true)
+![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Images/Screen%20Shot%202022-09-30%20at%208.45.58%20AM.png?raw=true)
 
 As seen in the example above, the local file `WhereAmI.java` was successfully copied over to the remote computer.
 
@@ -63,7 +63,7 @@ After returning to your local machine's terminal, we need to use `scp` to copy o
 
 After doing this, the public key should be copied over to the remote machine and you should be able to login without having to enter your password! The process should look like below:
 
-![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-09-30%20at%209.18.43%20AM.png?raw=true)
+![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Images/Screen%20Shot%202022-09-30%20at%209.18.43%20AM.png?raw=true)
 
 Note that there is no prompt to enter a password, as there was in previous attempts.
 
