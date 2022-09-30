@@ -2,7 +2,7 @@
 ## Sample Heading 2
 **Bold Text**
 *Italics Text*
-[Link](google.com)
+[Link](https://google.com)
 ![Image](https://raw.githubusercontent.com/ashishjayamohan/cse15l-lab-reports/main/screenshot.JPG)
 
 > Blockquote
