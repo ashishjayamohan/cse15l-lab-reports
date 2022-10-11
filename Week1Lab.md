@@ -54,7 +54,8 @@ Let's say, for example, that we were to create a local file `WhereAmI.java` that
 
 ![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Images/Screen%20Shot%202022-09-30%20at%208.45.58%20AM.png?raw=true)
 
-As seen in the example above, the local file `WhereAmI.java` was successfully copied over to the remote computer.
+As seen in the example above, the local file `WhereAmI.java` was successfully copied over to the remote computer. We can now run `WhereAmI.java` using `javac` and `java`, as shown below:
+![Image](https://github.com/ashishjayamohan/cse15l-lab-reports/blob/main/Images/Screen%20Shot%202022-10-11%20at%201.45.09%20PM.png)
 
 
 ## 5. Setting an SSH Key
