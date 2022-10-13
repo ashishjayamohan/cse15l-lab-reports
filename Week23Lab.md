@@ -60,13 +60,9 @@ You can run the above class using `javac SearchEngine.java` and `java SearchEngi
 
 ![Image](./Images/basic-search-engine.png)
 
-<<<<<<< HEAD:Week2Lab.md
 After getting the live version of the program running, you can append various paths to the end of the URL to achieve different results. There are two basic functions that you can use: `/add?s=<element>` and `/search?s=<query>`. They're both detailed below:
 - **/add** - After appending `/add` to the end of your URL, you can append `?s=` followed by any integral value. Doing this will call the `handleRequest` function and will go into the the first `if` condition. This appendage will add your chosen value to the ArrayList, `list`. The function will then print to the screen, confirming that your chosen value has been added to the list. An example for the numerical value `34` is shown below:
 
 ![Image](./Images/add-search-engine.png)
 
 - **/search**
-=======
-After getting the live version of the program running, you can append various paths to the end of the URL to achieve different results. There are 
->>>>>>> 09782f0662cb48ef85089386c942548f37d0eb31:Week23Lab.md
