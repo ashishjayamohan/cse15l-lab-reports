@@ -1,4 +1,4 @@
-# Remote Access
+# Week 1 - Remote Access
 
 ## Table of Contents
 1. [Installing VSCode](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#1-installing-vscode)
