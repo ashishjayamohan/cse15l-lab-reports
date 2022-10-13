@@ -3,7 +3,7 @@
 ## 1. Simple Search Engine
 In Week 2, we implemented an ultra-basic search engine to practice our use of `ssh` and `scp`. Using the structure of the given `Server.java` file, I was able to implement the search engine using the following code:
 
-```
+```java
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
@@ -57,6 +57,12 @@ class SearchEngine {
 ```
 
 You can run the above class using `javac SearchEngine.java` and `java SearchEngine <port-number>`. (*Note that you must pass in the desired port number as an argument into the command line - this value can be anything between 1024 and 49151*). Once you run the program, the `main` function is called - establishing the web server at the selected port and allowing you to view the live version of your project at `<host>:<port-number>`. Your screen should look somewhat like the one below:
+
 ![Image](./Images/basic-search-engine.png)
 
-After getting the live version of the program running, you can append various paths to the end of the URL to achieve different results. There are 
+After getting the live version of the program running, you can append various paths to the end of the URL to achieve different results. There are two basic functions that you can use: `/add?s=<element>` and `/search?s=<query>`. They're both detailed below:
+- **/add** - After appending `/add` to the end of your URL, you can append `?s=` followed by any integral value. Doing this will call the `handleRequest` function and will go into the the first `if` condition. This appendage will add your chosen value to the ArrayList, `list`. The function will then print to the screen, confirming that your chosen value has been added to the list. An example for the numerical value `34` is shown below:
+
+![Image](./Images/add-search-engine.png)
+
+- **/search**
