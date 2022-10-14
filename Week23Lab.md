@@ -74,16 +74,19 @@ After getting the live version of the program running, you can append various pa
 
 ## 2. Testing
 - **ArrayExamples Bugs**
-    - Test - The test used to identify this test is detailed below: 
-    ```
+    - Test - The test used to identify this bug is detailed below: 
+
+    ```java
     @Test
       public void testReverse() {
         int[] a = {3, 1, 5};
         assertArrayEquals(new int[]{5, 1, 3}, ArrayExamples.reversed(a));
       }
     ```
+
     - Code - The code for the `ArrayExmples.reversed()` function is detailed below:
-    ```
+
+    ```java
     static int[] reversed(int[] arr) {
         int[] newArray = new int[arr.length];
         for(int i = 0; i < arr.length; i += 1) {
@@ -92,7 +95,66 @@ After getting the live version of the program running, you can append various pa
         return arr;
     }
     ```
+
     - Symptoms - When the above test is run, the `reversed` function runs on array `a`, but returns the array `{0, 0, 0}`, which is the incorrect reversal. The correct reversed array should be `{5, 1, 3}`.
     - Bugs - When the above test is run, the function above is invoked on the array `a`. The `reversed` function then iterates through `arr` (reference to `a`), reassigning each value in `arr` (`a`) to the diametrically opposite index value from `newArray`, an initialized array from within the `reversed` function. This causes each value in `a` to be reassigned to the default values put into `newArray` when `newArray` was initialized, which in our case, is 0.
     - Fixes - This issue could be easily corrected by correcting line 4 of the `reversed` function to be the following: `newArray[i] = arr[arr.length - i - 1];`. Additionally, you would need to change the return statement to be `return newArray;` instead of `return arr;`
+    - Sample Run - The JUNIT report for this test is shown below:
+    ![Image](./Images/error-message-1.png)
+
 - **ListExamples Bugs**
+    - Test - The test used to identify this bug is detailed below:
+
+    ```java
+    @Test 
+    public void testMerge() {
+        ArrayList<String> first = new ArrayList<String>();
+        ArrayList<String> second = new ArrayList<String>();
+        first.add("A");
+        second.add("B");
+        first.add("C");
+        second.add("D");
+        
+        ArrayList<String> test = new ArrayList<String>();
+        test.add("A");
+        test.add("B");
+        test.add("C");
+        test.add("D");
+        assertEquals(test, ListExamples.merge(first, second));
+    }
+    ```
+
+    - Code - The code for the `ListExamples.merge()` function is detailed below:
+
+    ```java
+    static List<String> merge(List<String> list1, List<String> list2) {
+        List<String> result = new ArrayList<>();
+        int index1 = 0, index2 = 0;
+        while(index1 < list1.size() && index2 < list2.size()) {
+          if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
+            result.add(list1.get(index1));
+            index1 += 1;
+          }
+          else {
+            result.add(list2.get(index2));
+            index2 += 1;
+          }
+        }
+        while(index1 < list1.size()) {
+          result.add(list1.get(index1));
+          index1 += 1;
+        }
+        while(index2 < list2.size()) {
+          result.add(list2.get(index2));
+          index1 += 1;
+        }
+        return result;
+      }
+    ```
+
+    - Symptoms - The test `testMerge` invokes the `merge` function from above on the `first` and `second` ArrayLists. When run on these two ArrayLists, the `merge` function runs infinitely, and is stuck in an infinite loop. This causes the heap (the memory allocated by Java for your program) gets too full, causing the program to be terminated early.
+    - Bugs - The function `merge`, when run on two ArrayLists, does not check if the element that it is considering adding has already been added. Thus, in line 28, the program continuously adds the last element from `list1` (`first`) when all elements in `list1` are lexicographically lesser in value, as compared with the elements from `list2` (`second`).
+    - Fixes - The function `merge` should keep a track of which list the last element was added from, whether that be through a boolean value or keeping a current List and redefining that to the current active list. Once a list has been exhausted and all the elements of the list have been added to the `result` ArrayList, the function should only add elements from the other List.
+    - Sample Run - The JUNIT report for this test is shown below:
+    ![Image](./Images/error-message-2.png)
+    
