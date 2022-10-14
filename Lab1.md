@@ -1,12 +1,12 @@
 # Week 1 - Remote Access
 
 ## Table of Contents
-1. [Installing VSCode](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#1-installing-vscode)
-2. [Remotely Connecting](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#2-remotely-connecting)
-3. [Trying Some Basic Commands](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#3-trying-some-basic-commands)
-4. [Moving Files with SCP](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#4-moving-files-with-scp)
-5. [Setting an SSH Key](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#5-setting-an-ssh-key)
-6. [Optimizing Remote Running](https://ashishjayamohan.github.io/cse15l-lab-reports/Week1Lab.html#6-optimizing-remote-running)
+1. [Installing VSCode](#1-installing-vscode)
+2. [Remotely Connecting](#2-remotely-connecting)
+3. [Trying Some Basic Commands](#3-trying-some-basic-commands)
+4. [Moving Files with SCP](#4-moving-files-with-scp)
+5. [Setting an SSH Key](#5-setting-an-ssh-key)
+6. [Optimizing Remote Running](#6-optimizing-remote-running)
 
 ****
 

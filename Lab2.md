@@ -1,4 +1,8 @@
-# Week 2 & 3 - Simple Search Engine and Testing
+# Lab 2 - Simple Search Engine and Testing
+
+## Table of Contents
+1. [Simple Search Engine](#1-Simple-Search-Engine)
+2. [Testing](#2-Testing)
 
 ## 1. Simple Search Engine
 In Week 2, we implemented an ultra-basic search engine to practice our use of `ssh` and `scp`. Using the structure of the given `Server.java` file, I was able to implement the search engine using the following code:
