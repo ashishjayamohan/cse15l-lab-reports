@@ -1,4 +1,4 @@
-# Week 1 - Remote Access
+# Lab 1 - Remote Access
 
 ## Table of Contents
 1. [Installing VSCode](#1-installing-vscode)
