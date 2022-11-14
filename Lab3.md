@@ -1,6 +1,9 @@
 # Lab 3 - Command Line Options (find)
 
 ## Table of Contents
+1. [-name](#1-name)
+2. [-type](#2-type)
+3. [-size](#3-size)
 
 ## -name
 
